@@ -1,0 +1,42 @@
+.gum-profile {
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    flex: 0 0 30%;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.gum-profile:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.gum-profile:active {
+    background-color: gray;
+}
+
+.gum-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+}
+
+.img-gum {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+.gum-name {
+    font-size: larger;
+}
+
+.gum-data {
+    padding-left: 1rem;
+}
