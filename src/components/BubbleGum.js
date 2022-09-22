@@ -42,9 +42,9 @@ class GumList extends React.Component {
 }
 
 function BubbleGum(props) {
-    const gumProfile = this.props.gum;
+    const gumProfile = props.gum;
     return (
-        <div className="gum-profile" onClick={() => this.props.onClickFunction(gumProfile)}>
+        <div className="gum-profile" onClick={() => props.onClickFunction(gumProfile)}>
             <img className="img-gum" alt={gumProfile.imgURL} src={gumProfile.imgURL} />
             <div className="gum-data">
                 <div className="gum-name">{gumProfile.name}</div>
