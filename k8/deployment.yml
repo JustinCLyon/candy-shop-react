@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: candy-shop-deployment
+  labels:
+    app: candy-shop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: candy-shop
+  template:
+    metadata:
+      labels:
+        app: candy-shop
+    spec:
+      containers:
+        - name: candy-ctr
+          image: justinclyon/candy-shop-react
+          ports:
+            - containerPort: 3000

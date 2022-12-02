@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './style/BubbleGum.css'
-import CurrencyFormat from "./shared/CurrencyFormat";
+import './Style/BubbleGum.css'
+import CurrencyFormat from "./Shared/CurrencyFormat";
 
 const bubbleGumData = [
     {
@@ -27,15 +27,24 @@ const bubbleGumData = [
         name: "5 Gum",
         price: 3.97,
         imgURL: "https://i5.walmartimages.ca/images/Enlarge/650/482/6000201650482.jpg"
+    },
+    {
+        name: "Trident Layers",
+        price: 1.79,
+        imgURL: "https://www.jeancoutu.com/catalog-images/960156/viewer/0/trident-trident-layers-strawberry-citrus-1-unit.png"
     }
 ]
 
 
 class GumList extends React.Component {
+    constructor(props) {
+        super(props);
+        this.candy = this.props.candy
+    }
     render() {
         return(
             <div className="gum-list">
-                {bubbleGumData.map(thisGum => <BubbleGum gum={thisGum} onClickFunction={this.props.onClickFunction} />)}
+                {this.candy.map(thisGum => <BubbleGum gum={thisGum} onClickFunction={this.props.onClickFunction} />)}
             </div>
         )
     }

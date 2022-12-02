@@ -1,0 +1,18 @@
+.default-button {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #2558f3;
+    border-radius: 0.5rem;
+    border-width: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.default-button:hover {
+    background-color: #0d43e9;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    height: 10%;
+}

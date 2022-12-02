@@ -1,6 +1,6 @@
 import React from "react";
-import './style/Cart.css';
-import CurrencyFormat from "./shared/CurrencyFormat";
+import './Style/Cart.css';
+import CurrencyFormat from "./Shared/CurrencyFormat";
 
 class Cart extends React.Component {
     render() {
